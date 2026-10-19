@@ -6,11 +6,16 @@
   </head>
   <body>
     <h1>Git-uppgift</h1>
-
+    
     <script>
-      // TODO 1: Returnera ditt eget namn (just nu returneras "TODO").
-      function hamtaNamn() {
-        return "TODO";
+        const container = document.createElement("div")
+        document.body.appendChild(container)
+        const userName = document.createElement("h2")
+        userName.textContent = hamtaNamn("Louie Al-saffar")
+        container.appendChild(userName)
+     
+      function hamtaNamn(name) {
+        return name;
       }
 
       // TODO 2: Returnera summan av a och b (just nu returneras alltid 0).
