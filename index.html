@@ -13,14 +13,16 @@
         const userName = document.createElement("h2")
         userName.textContent = hamtaNamn("Louie Al-saffar")
         container.appendChild(userName)
-     
+        const summa = document.createElement("h3")
+        summa.textContent = `Summa: ${addera(6,6)}`
+        container.appendChild(summa)
+        
       function hamtaNamn(name) {
         return name;
       }
 
-      // TODO 2: Returnera summan av a och b (just nu returneras alltid 0).
       function addera(a, b) {
-        return 0;
+        return a + b;
       }
 
       // TODO 3: Returnera "ok" om talet är större än 10, annars "för låg".
